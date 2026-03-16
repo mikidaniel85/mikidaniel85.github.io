@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Systems Studio | Official Apps</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            width: 100%;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1em;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1100px;
+            padding: 50px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            width: 320px;
+            padding: 35px;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .app-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        .app-logo {
+            width: 130px;
+            height: 130px;
+            border-radius: 28px;
+            object-fit: cover;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .app-card h2 {
+            margin: 10px 0;
+            font-size: 1.6em;
+            color: var(--primary-color);
+        }
+
+        .app-card p {
+            font-size: 0.95em;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            height: 75px; /* Aligns buttons across cards */
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: background 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 40px;
+            font-size: 0.9em;
+            color: #888;
+            text-align: center;
+        }
+
+        footer a {
+            color: #888;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Logic Systems Studio</h1>
+        <p>Innovative Tools for Growth, Wealth, and Productivity</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="app-card">
+            <img src="STORE LOGO.png" alt="Wealth Architect Logo" class="app-logo">
+            <h2>Wealth Architect</h2>
+            <p>Strategize your investments, track market performance, and build your financial future with advanced analytics.</p>
+            <a href="#" class="btn">Download on Google Play</a>
+        </div>
+
+        <div class="app-card">
+            <img src="LOGO_512.png" alt="Smart Routine LTT Logo" class="app-logo">
+            <h2>Smart Routine - LTT</h2>
+            <p>Master your daily flow. Build lasting habits and manage your routines with a focus on efficiency and total privacy.</p>
+            <a href="#" class="btn">Download on Google Play</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Logic Systems Studio. All rights reserved.</p>
+        <p>
+            <a href="app-ads.txt">Developer Info (app-ads.txt)</a> | 
+            <a href="#">Privacy Policy</a>
+        </p>
+    </footer>
+
+</body>
+</html>
