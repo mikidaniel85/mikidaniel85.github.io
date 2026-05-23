@@ -99,14 +99,16 @@
             <h3>Invenly</h3>
             <p><strong>Data Storage:</strong> Because Invenly is a multi-tenant, real-time collaboration tool, user data, organization information, and inventory records are securely stored and synced via cloud services (Google Firebase). We employ strict Security Rules to ensure users can only access data belonging to their authorized organizations.</p>
             <p><strong>Account Required:</strong> You must create an account (e.g., via Google Sign-In) to join an organization and use the app. Your email address and basic profile info are stored to identify you within your organization.</p>
-            <p><strong>Permissions:</strong> The app may request access to your device's Camera to scan barcodes. Images from the camera are processed locally in real-time and are never uploaded or stored on our servers.</p>
+            <p><strong>Permissions & Camera:</strong> The app may request access to your device's Camera. For standard barcode scanning, images are processed locally in real-time on your device and are never uploaded or stored. For the AI-powered features (Item Auto-fill and Smart Delivery Note Scanner), image data or delivery notes are transmitted securely to our cloud functions and OpenAI's API solely for text and product extraction, and are not stored permanently by us.</p>
+            <p><strong>AI Features Data Processing:</strong> When you use AI-powered features (such as Chat with Inventory, Smart Delivery Note Scanner, or Auto-fill Item Details), relevant context (such as your inventory status, chat messages, or images) is securely processed using third-party artificial intelligence services (specifically OpenAI's APIs). This data is processed in transient memory to generate responses and extractions and is not used to train the AI models. You should avoid typing highly sensitive personal data in the chat or scanning documents containing sensitive personal information.</p>
         </div>
 
         <h2>3. Third-Party Services</h2>
-        <p>To provide a better experience, we may use third-party services that collect information used to identify you:</p>
+        <p>To provide a better experience, we may use third-party services that collect or process information:</p>
         <ul>
             <li><strong>Google Play Services:</strong> Required for app functionality and updates.</li>
-            <li><strong>Firebase Analytics:</strong> We use anonymized data to understand app crashes and performance issues.</li>
+            <li><strong>Firebase Analytics & Cloud Functions:</strong> Anonymized data to monitor performance, plus serverless execution for syncing.</li>
+            <li><strong>OpenAI API:</strong> Used to power Invenly's AI Chat, invoice scanner, and auto-fill features. Sent data is processed strictly to return results and is not retained or used for training.</li>
             <li><strong>Paddle.com:</strong> Acts as our Merchant of Record. All subscription and payment processing is handled securely by Paddle. We do not store or process your credit card information on our servers.</li>
         </ul>
 
